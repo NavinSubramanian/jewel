@@ -22,7 +22,7 @@ export default function NavBar (props) {
                     <h3>Customize</h3>
                     <h3>More</h3>
                 </div>
-                <Link to='/'><img src={mainLogo} alt="" style={{height:'70px',width:'190px'}} /></Link>
+                <Link to='/'><img src={mainLogo} alt="" style={{height:'70px',width:'190px', marginRight:'60px'}} /></Link>
                 <div className='navIcons'>
                     <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
                     <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>

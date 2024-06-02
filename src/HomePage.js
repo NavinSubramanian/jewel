@@ -114,7 +114,7 @@ export default function HomePage () {
         <div className='traditionalBottom'>
           <h1>Traditionally cared since 1976</h1>
           <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-          <Link to=''>
+          <Link to='/about'>
             <button>See More <FontAwesomeIcon icon={faArrowRight} /> </button>
           </Link>
         </div>
