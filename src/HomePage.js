@@ -18,6 +18,12 @@ import ImageHome1 from './assets/homeImages/imageHome1.jpg'
 import traditionalCared from './assets/homeImages/traditionallyCared.png'
 import CustomJewellery from './assets/homeImages/customJewel.png'
 import CeoBackground from './assets/homeImages/ceobackground.png'
+import shopCateBg from './assets/homeImages/shopCateBg.png'
+import Category1 from './assets/homeImages/category1.png'
+import Category2 from './assets/homeImages/category2.png'
+import Category3 from './assets/homeImages/category3.png'
+import Category4 from './assets/homeImages/category4.png'
+
 
 import { useEffect, useState } from 'react';
 
@@ -105,7 +111,36 @@ export default function HomePage () {
         </div>
       </section>
 
-      <section className='shopCategories'></section>
+      <section className='shopCategories' style={{backgroundImage:`url(${shopCateBg})`}}>
+        <h1>Shop By Categories</h1>
+        <h4>நாங்கள் வழங்குவதில் ஈடுபடுங்கள்.</h4>
+        <div>
+          <Link to='/gold'>
+            <div>
+              <img src={Category1} />
+              <h2>Gold</h2>
+            </div>
+          </Link>
+          <Link to='/gold'>
+            <div>
+              <img src={Category2} />
+              <h2>Silver</h2>
+            </div>
+          </Link>
+          <Link to='/gold'>
+            <div>
+              <img src={Category3} />
+              <h2>Platinum</h2>
+            </div>
+          </Link>
+          <Link to='/gold'>
+            <div>
+              <img src={Category4} />
+              <h2>Coins</h2>
+            </div>
+          </Link>
+        </div>
+      </section>
 
       <section className='traditionalCared'>
         <div className='traditionalImage'>
