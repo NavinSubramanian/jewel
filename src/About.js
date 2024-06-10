@@ -49,6 +49,16 @@ const About = () => {
                 <img src={About3} alt='' draggable="false" />
             </div>
 
+            <div className='about_container4'>
+                <div>
+                    <h1>Contact Information</h1>
+
+                </div>
+                <div>
+                    {/* <map name=""></map> */}
+                </div>
+            </div>
+
             <Footer />
         </>
 

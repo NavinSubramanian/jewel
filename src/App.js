@@ -8,6 +8,7 @@ import About from './About';
 import Gold from './Gold';
 import Page from './Page';
 import Work from './Work';
+import Chitfund from './Chitfund';
 import SeperateItem from './components/SeperateItem'
 
 function App () {
@@ -20,6 +21,8 @@ function App () {
         <Route path='/custom' Component={Page}></Route>
         <Route path='/work' Component={Work}></Route>
         <Route path='/single/:id' Component={SeperateItem}></Route>
+        {/* <Route path='/single/:id/enquire' Component={SeperateItem}></Route> */}
+        <Route path='/chitfund' Component={Chitfund}></Route>
       </Routes>
     </BrowserRouter>
   )

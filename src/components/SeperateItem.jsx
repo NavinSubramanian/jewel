@@ -3,8 +3,17 @@ import '../logic/imageSwitch'
 
 import NavBar from './NavBar'
 import { Link } from 'react-router-dom'
+import ImageGallery from './ImageGallery'
+import Footer from './Footer'
 
 const SeperateItem = () => {
+
+  const images = [
+    'https://picsum.photos/id/237/250',
+    'https://repository-images.githubusercontent.com/260096455/47f1b200-8b2e-11ea-8fa1-ab106189aeb0',
+    'https://s.yimg.com/ny/api/res/1.2/5kukfuJeSo9OrB46m0qw6g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNg--/https://media.zenfs.com/en/pethelpful_915/9a2772c00bed83974d5529d44effaaa8'
+  ];
+
   return (
     <>
       <NavBar />
@@ -19,21 +28,14 @@ const SeperateItem = () => {
         <Link to='/'>Sample Item</Link>
       </div>
       
-      <div className="gallery-container">
-          {/* <div className="product-images">
-              <img className="active" src="" id='slide_image_1' alt="Image 1" />
-              <img src="" id='slide_image_2' alt="Image 2" />
-              <img src="" id='slide_image_3' alt="Image 3" />
-          </div> */}
-          <ul className='productImages'>
-            <li><img src='' /></li>
-            <li><img src='' /></li>
-            <li><img src='' /></li>
-          </ul>
+      <div className="gallery-container" style={{marginBottom:'50px'}}>
+          <ImageGallery images={images} />
           <div className="product-info">
-              <h3>Sample Item</h3>
-              <span className="price">₹70000.00</span>
-              <p>chain tho...</p>
+              <div>
+                <h3>Sample Item</h3>
+              </div>
+              <h4 className="price"><span style={{fontSize:'25px'}}>₹</span>70000.00</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis illum accusamus, enim praesentium facere iste necessitatibus vero repudiandae voluptate recusandae vitae ex dolore? Doloremque, nihil eos. Cupiditate, placeat omnis?</p>
               <div className="actions">
                   <button>Enquire</button>
                   <button>Add to cart</button>
@@ -46,6 +48,8 @@ const SeperateItem = () => {
               </div>
           </div>
       </div>
+
+      <Footer />
     </>
   )
 }
