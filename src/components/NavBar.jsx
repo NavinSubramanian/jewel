@@ -7,6 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import mainLogo from '../assets/homeImages/mainLogo.png'
 import { height } from '@fortawesome/free-solid-svg-icons/fa0'
 
+import {
+    menuItems
+} from "./Items/menuItems";
+import MenuItems from "./MenuItems";
+
 export default function NavBar (props) {
 
     const isLoad = useState(false);
@@ -18,9 +23,22 @@ export default function NavBar (props) {
             </div>
             <div className='bottomNav'>
                 <div className='navSections'>
-                    <h3>Shop</h3>
-                    <h3>Customize</h3>
-                    <h3>More</h3>
+                    <ul className = "menus" > {
+                        menuItems.map((menu, index) => {
+                            const depthLevel = 0;
+                            return <MenuItems items = {
+                                menu
+                            }
+                            key = {
+                                index
+                            }
+                            depthLevel = {
+                                depthLevel
+                            }
+                            />;
+                        })
+                    }
+                    </ul>
                 </div>
                 <Link to='/'><img src={mainLogo} alt="" style={{height:'70px',width:'190px', marginRight:'60px'}} /></Link>
                 <div className='navIcons'>
