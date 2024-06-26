@@ -10,6 +10,10 @@ import Page from './Page';
 import Work from './Work';
 import Chitfund from './Chitfund';
 import SeperateItem from './components/SeperateItem'
+import Enquire from './components/Enquire'
+import Admin from './Admin'
+import Price from './Price'
+import Product from './Product'
 
 function App () {
   return(
@@ -21,8 +25,11 @@ function App () {
         <Route path='/custom' Component={Page}></Route>
         <Route path='/work' Component={Work}></Route>
         <Route path='/single/:id' Component={SeperateItem}></Route>
-        {/* <Route path='/single/:id/enquire' Component={SeperateItem}></Route> */}
+        <Route path='/single/:id/enquire' Component={Enquire}></Route>
         <Route path='/chitfund' Component={Chitfund}></Route>
+        <Route path='/admin' Component={Admin}></Route>
+        <Route path='/admin/price' Component={Price}></Route>
+        <Route path='/admin/newprod' Component={Product}></Route>
       </Routes>
     </BrowserRouter>
   )

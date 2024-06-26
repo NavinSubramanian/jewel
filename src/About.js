@@ -1,10 +1,14 @@
 import React from 'react'
+
 import About1 from './assets/onePagesImages/about1.png';
 import About2 from './assets/onePagesImages/about2.png';
 import About3 from './assets/onePagesImages/about3.png';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+
+import { faPhone,faMailReply } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const About = () => {
     return (
@@ -50,12 +54,19 @@ const About = () => {
             </div>
 
             <div className='about_container4'>
+                <h1>Contact Information</h1>
                 <div>
-                    <h1>Contact Information</h1>
-
-                </div>
-                <div>
-                    {/* <map name=""></map> */}
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.9293786930657!2d80.10093376954615!3d12.989911005993727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260017b666647%3A0x7cdb07addfa74ca9!2sManickam%20Nagar%20Main%20Rd%2C%20Kovur%2C%20Kundrathur%2C%20Tamil%20Nadu%20600069!5e0!3m2!1sen!2sin!4v1719378875819!5m2!1sen!2sin" width="500" height="350" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <div>
+                            <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+                            <p>+91 8203922012</p>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon icon={faMailReply}></FontAwesomeIcon>
+                            <p>abc@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
